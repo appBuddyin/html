@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TechHub With bootstrap</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <h1 style="text-align: center; color: seagreen">TMU BCA 2019 BATCH</h1>
+    
+    <p class="bg-primary text-white">
+            <marquee behavior="alternate" scrollamount="15%">“Goodbyes are only for those who love with their eyes.
+         Because for those who love with heart and soul there is no such thing as separation.”
+        </marquee>
+    </p>
+ 
+ 
+    <p class="bg-danger text-white">
+            <marquee behavior="scroll" direction="left" scrollamount="20%">
+            “How lucky I am to have something that makes saying goodbye so hard.”
+        </marquee>
+    </p>
+
+    <p class="bg-warning text-white">
+            <marquee behavior="alternate" scrollamount="30%">
+            “What we call the beginning is often the end. And to make an end is to make a beginning. The end is where we start from.”
+                </marquee>
+        </p>
+    <p class="bg-dark text-white">
+            <marquee behavior="alternate" scrollamount="5%">
+        “There are no goodbyes for us. Wherever you are, you will always be in my heart.</marquee>
+    </p>
+
+
+<div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <a class="navbar-brand" href="#">Logo</a>
+    <ul class="navbar nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#pics">HOME</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="#">NEWS</a>
+                    </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+    <form class="form-inline " action="/action_page.php">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">  
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </ul>
+</nav>
+
+
+</div>
+
+<div class="container-fluid">
+</div>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+     
+        <div class="carousel-inner" id="pics">
+          <div class="carousel-item active">
+            <img src="DSC_0122.JPG" alt="Los Angeles" width="2000" height="800">
+          </div>
+          <div class="carousel-item">
+            <img src="DSC_0224.JPG" alt="Chicago" width="2000" height="800">
+          </div>
+          <div class="carousel-item">
+            <img src="DSC_0244.JPG" alt="New York" width="2000" height="800">
+          </div>
+        </div>
+        
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+
+<div>
+    <button type="button" class="btn btn-primary ">Primary</button>
+    <button type="button" class="btn btn-dark">Notification<span class="badge badge-light">7</span></button>
+    <button type="button" class="btn btn-outline-success" data-toggle="collapse" data-target="#demo">Click to See</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-info"><span class="spinner-border spinner-border-sm"></span>Loading..</button>
+</div>
+<div>
+    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">
+            Student
+          </button>
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <div class="modal-header">
+                  <h4 class="modal-title">2019 Student</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  You are not 2019 Batch Student..
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+</div>
+
+<ul class="pagination pagination-sm justify-content-center">
+    <li class="page-item"><a class="page-link" href="TechHub.html">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="head.html">1</a></li>
+    <li class="page-item"><a class="page-link" href="Heading.html">2</a></li>
+    <li class="page-item"><a class="page-link" href="colors.html">Next</a></li>
+</ul>
+
+<div class="card collapse" style="width: 400px" id="demo">
+    <img class="card-img-top" src="img_avatar1.png" style="width:100%">
+<div class="card-img-overlay">
+    <h1 class="card-title">Nigam chauhan</h1>
+    <p class="card-text">This is Nigam chuahan's card.He is an software engineer.</p>
+
+</div>
+
+
+
+</div>
+        <table class="table table-hover" id="contact">
+        <thead>
+        <tr style="text-align: center">
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+        </tr>
+        </thead>
+        <tbody id="table">
+            <tr style="text-align: center" class="table table-primary">
+                <td>Nigam</td>
+                <td>Chauhan</td>
+                <td>nigam@appbuddy.in</td>
+            </tr>
+            <tr style="text-align: center" class="table table-success">
+                    <td>Hemant</td>
+                    <td>Gaur</td>
+                    <td>hemant@appbuddy.in</td>
+            </tr>
+            <tr style="text-align: center" class="table table-danger">
+                    <td>Harshit</td>
+                    <td>Vishnoi</td>
+                    <td>harshit@appbuddy.in</td>
+            </tr>
+        </tbody>
+        </table>
+        <div class="container-fluid">
+                <div class="row">
+                  <div class="col bg-success">Lorem ipsum dolor sit amet, cibo sensibus interesset no sit. Et dolor possim volutpat qui. No malis tollit iriure eam, et vel tale zril blandit, rebum vidisse nostrum qui eu. No nostrud dolorem legendos mea, ea eum mucius oporteat platonem.Eam an case scribentur, ei clita causae cum, alia debet eu vel.</div>
+                  <div class="col bg-warning">.col</div>
+                  <div class="col bg-success">.col</div>
+                </div>
+              </div>
+</body>
+</html>

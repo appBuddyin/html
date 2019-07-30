@@ -1,0 +1,40 @@
+<html>
+<body>
+        <p id="demo"></p>
+        <p id="demo3"></p>
+        <p id="demo5"></p>
+        <p id="demo6"></p>
+        <p id="demo7"></p>
+        <p id="demo8"></p>
+    <script>
+        var person = {firstName : "Nigam",
+                   lastName : "Chauhan",
+                   age : "20",
+                   fullName : function(){
+                       return this.firstName + " " +this.lastName;
+                   }
+                };
+                document.getElementById('demo').innerHTML = person.fullName();
+                var str="Nigam, appBuddy, java";
+                var res=str.slice(7,15);
+                var res2=str.slice(-12,-6);
+                var res3=str.substring(1,5);
+                var res4=str.substring(-12,-3);
+                var res5=str.substr(7,8);
+                document.getElementById("demo3").innerHTML=res;
+                document.getElementById("demo5").innerHTML=res2;
+                document.getElementById("demo6").innerHTML=res3;
+                document.getElementById("demo7").innerHTML=res4;
+                document.getElementById("demo8").innerHTML=res5;
+               
+    </script>
+ <button onclick="document.getElementById('demo1').innerHTML=Date()">The Time is? </button>
+ 
+
+ <p id="demo1"></p>
+
+
+</body>
+
+
+</html>

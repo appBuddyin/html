@@ -1,0 +1,56 @@
+.h1{
+
+    text-align: center;
+    font-size: 250%;
+    font-family: Georgia;
+    color: white;
+    padding: 16px;
+    background-color: gray;
+}
+
+
+#head
+{
+    font-size: 120%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkgrey;
+}
+#p01
+{
+    color: black;
+}
+ul
+{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    background-color:slategray;
+}
+li
+{
+    float: left;
+}
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 16px;
+text-decoration: none;
+}
+
+table, th, td {
+    background-color: #777;
+    text-align: center;
+    padding: 5px;
+}
+table {
+border-spacing: 15px;
+}
+
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
