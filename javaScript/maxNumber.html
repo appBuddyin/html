@@ -1,0 +1,41 @@
+<html>
+    <body>
+        <p>Maximum number is :-</p>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+
+        <script>
+            function findMax(){
+                var x = -Infinity;
+                var i;
+                for(i=0 ; i <= arguments.length ; i++){
+                    if(arguments[i]>x){
+                        x = arguments[i];
+                    }
+                }
+                return x;
+            }
+            document.getElementById("demo").innerHTML = findMax(21,34,43,12,5,24);
+
+
+
+            var person = {
+                fullName : function(){
+                    return this.firstName + " " + this.lastName;
+                }
+            }
+
+            var person1 = {
+                firstName : "Nigam",
+                lastName : "Chauhan"
+            }
+            var person2 = {
+                firstName : "Harshit",
+                lastName : "Kumar"
+            }
+        document.getElementById("demo1").innerHTML=person.fullName.call(person2);
+        </script>
+      
+
+    </body>
+</html>
