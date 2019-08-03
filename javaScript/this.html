@@ -1,0 +1,53 @@
+<html>
+    <body>
+            <p id="demo"></p>
+            <p id="demo1"></p>
+       
+        <button id="btn">Click Me!</button>
+        <script>
+            var person1 = {
+                firstname:"Nigam",
+                secondName: "chauhan",
+                id: "1234",
+                fullName : function() {
+                    return this.firstname + " " +this.secondName;
+                    }
+            }
+            document.getElementById("demo").innerHTML=person1.fullName();
+
+            var hello;
+
+            hello = () => {
+            document.getElementById("demo").innerHTML += this;
+                            }
+            window.addEventListener("load", hello);
+            document.getElementById("btn").addEventListener("click", hello);
+
+            class car {
+            constructor(brand){
+            this.carname=brand;
+                    }
+                present(){
+                    return "I have a "+ this.carname;
+                        }
+            }
+
+            class model extends car{
+                constructor(brand,mod){
+                    super(brand);
+                    this.model=mod;
+                }
+
+                show(){
+                    return this.present() + ', It is ' +this.model;
+                }
+
+
+            }
+
+            mycar= new model("ford","Duster");
+            document.getElementById("demo1").innerHTML=mycar.show();
+        </script>
+       
+    </body>
+</html>

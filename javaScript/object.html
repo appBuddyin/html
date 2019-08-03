@@ -6,6 +6,14 @@
         <p id="demo6"></p>
         <p id="demo7"></p>
         <p id="demo8"></p>
+        <p id="cars1"></p>
+        
+        <button onclick="myFunction()">Sort fruits</button>
+        <p id="fruits"></p>
+        <p id="fruits1"></p>
+        <p id="map1"></p>
+        <p id="filter1"></p>
+        
     <script>
         var person = {firstName : "Nigam",
                    lastName : "Chauhan",
@@ -26,13 +34,39 @@
                 document.getElementById("demo6").innerHTML=res3;
                 document.getElementById("demo7").innerHTML=res4;
                 document.getElementById("demo8").innerHTML=res5;
+                var cars = {carName : "Swift Desire",carModel : "1234 ", carColor:"White"};
+                document.getElementById("cars1").innerHTML=cars.carName;
+                var fruits,fruitsLen,i,text;
+                fruits=["Banana","Mango","Papaya"];
+                fruits.push("Lemon");
+                fruitsLen=fruits.length;
+                
+                document.getElementById("fruits").innerHTML=fruits;
+                function myFunction(){
+                    fruits.sort();
+                    document.getElementById("fruits1").innerHTML=fruits;
+                }
                
+
+                var numbers1=[12,3,43,25,8];
+                var numbers2=numbers1.map(mapFunction);
+                document.getElementById("map1").innerHTML=numbers2;
+                var numbers3=numbers2.filter(filterFunction);
+                document.getElementById("filter1").innerHTML= "Numbers Greater then 25 are =" + numbers3;
+                function mapFunction(value,index,array){
+                    return value*2;
+
+                }
+
+                function filterFunction(value,index,array){
+                    return value>25;
+                }
     </script>
  <button onclick="document.getElementById('demo1').innerHTML=Date()">The Time is? </button>
  
 
  <p id="demo1"></p>
-
+ 
 
 </body>
 

@@ -1,0 +1,52 @@
+<html>
+    <head>
+            <h1> All entered field will convert into UpperCase</h1>
+            Enter your Name : <input type="text" id="name" onchange="change()">
+    </head>
+<body>
+      
+
+        <button type="button" style="width: 100px; height:100px; padding: 16px; font-weight: 100; background-color: cornflowerblue;
+        " onmouseover="mOver(this)" onmouseout="mOut(this)"> Mouse Over Me</button>
+
+        <button id="btn">Try Me!</button>
+        <p id="demo"></p>
+    <script>
+        function change(){
+            var x = document.getElementById("name");
+            x.value = x.value.toUpperCase();
+        }
+        function mOver(objt){
+            objt.innerHTML = "mouse Over me."
+        }
+        function mOut(objt){
+          objt.innerHTML = "Thank you!"
+          objt.style.color = "white"
+        }
+
+
+        var y = document.getElementById("btn");
+        y.addEventListener("mouseover",overFunction);
+        y.addEventListener("mouseout",outFunction);
+        y.addEventListener("click",clickFunction);
+        function overFunction(){
+            document.getElementById("demo").innerHTML += "Mouse Over me!<br>"
+        }
+        function outFunction(){
+            document.getElementById("demo").innerHTML += "Mouse out!<br>"
+        }
+        function clickFunction(){
+            document.getElementById("demo").innerHTML += "Clicked!<br>"
+        }
+
+      
+
+
+    </script>
+       
+     
+        
+</body>
+
+
+</html>
