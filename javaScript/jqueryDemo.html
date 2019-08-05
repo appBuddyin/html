@@ -1,0 +1,60 @@
+<html>
+<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <body>
+        <h1 class="hideHead">Click second button to hide me.</h1>
+        <h2 id="double">If u double click me then i will hide.</h2>
+        <h3>move mouse pointer on me.</h3>
+        <script>
+            $(document).ready(function(){
+                
+                $("h2").dblclick(function(){
+                    $(this).hide();
+                });
+
+                $("p").click(function(){
+                    $(this).hide();
+                });
+              
+                    $("button").click(function(){
+                        $("#hide").hide(1000);
+                });
+
+                $("h3").on({
+                    mouseenter:function(){
+                        $(this).css("background-color","grey");
+                    },
+                    mouseleave: function(){
+                        $(this).css("background-color","yellow");
+                    },
+                    click: function(){
+                        $(this).css("background-color","lightblue");
+                    }
+
+
+                });
+
+                $("button").click(function(){
+                    $(".hideHead").hide(1000);
+
+                });
+                });
+
+               
+        
+        </script>
+
+        <p>Click me! if you want to hide me.</p>
+        <p>Click me also.</p>
+        <p>click me too..</p>
+        <button>Click me</button>
+        <p id="hide">Click button to hide me.</p>
+        <button>Click me</button>
+
+
+    </body>
+
+
+</head>
+
+</html>
