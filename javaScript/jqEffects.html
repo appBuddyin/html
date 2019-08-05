@@ -1,0 +1,44 @@
+<html>
+    <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                  $("#div1").fadeToggle();
+                  $("#div2").fadeToggle("slow");
+                  $("#div3").fadeToggle(3000);
+                });
+
+                $("#div4").click(function(){
+                  $("#div5").slideToggle("slow");
+
+                });
+              });
+              </script>
+              <style> 
+                  #div5, #div4 {
+                    padding: 5px;
+                    text-align: center;
+                    background-color: #e5eecc;
+                    border: solid 1px #c3c3c3;
+                  }
+                  
+                  #div5 {
+                    padding: 50px;
+                    display: none;
+                  }
+                  </style>
+            </head>
+        <body>
+               
+            <button>Click Me! to FadeToggle</button> <br>  <br>
+        <div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
+        <div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
+        <div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+        <div id="div4">Click to slide the panel down or up</div>
+        <div id="div5">Hello world!</div>
+
+
+        </body>
+
+</html>
