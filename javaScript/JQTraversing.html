@@ -1,6 +1,8 @@
 <html>
     <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <style>
+              
                     .ancestors * { 
                       display: block;
                       border: 2px solid lightgrey;
@@ -9,13 +11,8 @@
                       margin: 15px;
                     }
                     </style>
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-                    <script>
-                            $(document).ready(function(){
-                              $("#span1").parent().css({"color": "red", "border": "2px solid red"});
-                              $("#div1").children().css({"color": "red", "border": "2px solid red"});
-                            });
-                    </script>
+                    
+                   
     </head>
     <body>
             <div class="ancestors">
