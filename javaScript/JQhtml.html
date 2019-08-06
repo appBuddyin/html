@@ -1,0 +1,92 @@
+<html>
+    <head>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#btn1").click(function(){
+                    alert("Text: "+ $("#test").text());
+                });
+
+                $("#btn2").click(function(){
+                    alert("Html : "+ $("#test").html());
+                });
+
+                $("#btn3").click(function(){
+                    $("#p1").text("Hello world!");
+                });
+
+                $("#btn4").click(function(){
+                    $("#inpt").val("Hemant Gaur");
+                });
+
+                $("#btn5").click(function(){
+                    $("#div1").remove();
+
+                });
+
+                $("#btn6").click(function(){
+                    $("#div1").empty();
+                });
+
+                $("#btn7").click(function(){
+                $("#h1, #h2, #p4, #p5").addClass("blue");
+                $("#div2").addClass("important");
+                });
+
+                $("#btn8").click(function(){
+                $("#p6, #p7, #p8").css({"background-color": "yellow", "font-size": "200%"});
+                });
+           
+            });
+            function appendText(){
+                var text1 = "Text.";
+                var text2 = $("<p></p>").text("Text.");
+                var text3 = "Text."
+                $("body").append(text1,text2,text3);
+            }
+        
+        
+        </script>
+        <style>
+                .important {
+                  font-weight: bold;
+                  font-size: xx-large;
+                }
+                
+                .blue {
+                  color: blue;
+                }
+                </style>
+    </head>
+
+    <body>
+        <p id="test"> I am Nigam chauhan. i work at <b>Dhanashree Nidhi limited</b> as a trainee.</p><br>
+        <button id="btn1">Show text</button>
+        <button id="btn2">Show html</button> <br> <br>
+        <p id="p1">This is paragraph 1.</p> <br>
+        <button id="btn3">set Text</button> <br> <br>
+        Enter Name : <input type="text" id="inpt" value="Nigam Chauhan"> <br> <br>
+        <button id="btn4">Change value</button>
+        <button onclick="appendText()">Append</button> <br> <br>
+        <div id="div1" style="background-color: chartreuse;color:darkblue;height:100px;widows: 300px;padding:4px;border:2px solid black;">
+              
+                <p>This is a paragraph in the div.</p>
+                <p>This is another paragraph in the div.</p>
+        </div> <br> <br>
+        <button id="btn5">Remove Div</button>
+        <button id="btn6" >Empty Div</button> 
+        <h1 id="h1">Heading 1</h1>
+        <h2 id="h2">Heading 2</h2>
+        <p id="p4">This is a paragraph.</p>
+        <p id="p5">This is another paragraph.</p>
+        <div id="div2">This is some important text!</div><br>
+        <button id="btn7">Add classes to elements</button> <br> <br>
+        <p id="p6" style="background-color:#ff0000">This is a paragraph.</p>
+        <p id="p7" style="background-color:#00ff00">This is a paragraph.</p>
+        <p id="p8" style="background-color:#0000ff">This is a paragraph.</p> <br> <br>
+        <button id="btn8">Set multiple styles for p</button>
+
+
+    </body>
+</html>
