@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <style>
+              
+                    .ancestors * { 
+                      display: block;
+                      border: 2px solid lightgrey;
+                      color: lightgrey;
+                      padding: 5px;
+                      margin: 15px;
+                    }
+                    </style>
+                    
+                   
+    </head>
+    <body>
+            <div class="ancestors">
+                    <div style="width:500px;">div (great-grandparent)
+                      <ul>ul (grandparent)  
+                        <li>li (direct parent)
+                          <span id="span1">span</span>
+                        </li>
+                      </ul>   
+                    </div>
+                  
+
+                  <div id="div1" class="descendants" style="width:500px;">div (current element) 
+                        <p>p (child)
+                          <span>span (grandchild)</span>   
+                        </p>
+                        <p>p (child)
+                          <span>span (grandchild)</span>
+                        </p> 
+                      </div>
+    </body>
+</html>
