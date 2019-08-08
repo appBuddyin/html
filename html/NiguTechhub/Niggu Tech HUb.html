@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -24,23 +25,47 @@
     </head>
 
     <body>
-            <div class="header">
-                <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="#">About</a>
-                    <a href="#">Our Teachers</a>
-                    <a href="#">Clients</a>
-                    <a href="#">Contact</a>
-                  </div>
+            <div class="header"></div>
+               
                     <div class="navbar">
+                       
                             <a href="#" class="active"><b>NIGGU </b><br> <p style="font-size: 20px">TECH HUB</p></a>
-                            <span id="span1" style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                            
+                             <div  class="icon-bar">
+                                <span id="span1" style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                            <a  href="https://www.facebook.com/nigam.chauhan.37" target="_blank"><i class="fa fa-facebook"></i></a> 
+                            <a href="https://www.instagram.com/im_nigam23/" target="_blank"><i class="fa fa-instagram"></i></a> 
+                            <a href="https://www.linkedin.com/in/nigam-chauhan-419460143/" target="_blank"><i class="fa fa-linkedin"></i></a> 
+                            <a href="https://twitter.com/NigamChauhan10" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="https://myaccount.google.com/?utm_source=OGB&hl=en&tab=kk&utm_medium=app" target="_blank"><i class="fa fa-envelope"></i></a> 
                           </div>
-                    <img style="height: 100% ; width: 100%" src="NigTechHeader.jpg">
+                          </div>
+
+                      <img style="height: 100% ; width: 100%" src="NigTechHeader.jpg">
+                          
                   </div>
-                                   
-                  <div class="footer">
-                    <h2>Footer</h2>
+                 
+                  <div id="mySidenav" class="sidenav">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                      <a href="#">About</a>
+                      <a href="#">Our Teachers</a>
+                      <a href="#">Clients</a>
+                      <a href="#">Contact</a>
+                    </div>
+                    
+                    <div class="content">
+                        <h1>This page is horizontally centered on screens that are wider than 500 pixels.</h1>
+                        <h1>Resize the browser window to see the effect.</h1>
+                        <p>This page is always centered on screens that are wider than 500px. On screens that are less than 
+                        500px wide, it will span the whole of the page.</p>
+                        
+                      </div>
+                      
+                    
+                  <div  class="footer">
+                    <p>Subscribe to get our upcoming programs..</p><br>
+                    <input id="footerbutton1" type="email" placeholder="enter your email here*" style="text-align: center;width: 400px; padding:6px"><br>
+                    <input id="footerbutton2" type="button" value="Subscribe" style="background-color: black;color:blanchedalmond;height: 40px;width: 400px" >
                   </div>
 
                  
